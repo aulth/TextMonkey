@@ -4,11 +4,11 @@ import TextForm from './components/TextForm';
 import React, { useState } from 'react'
 import Alert from './components/Alert';
 import Footer from './components/Footer';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState('light');
@@ -39,20 +39,20 @@ function App() {
   }
     return (
     <>
-    <Router>
+    {/* <Router> */}
     <Navbar showAlert={showAlert} title='TextMonkey' aboutText='About' modeText={modeText} mode={mode} toggleMode={toggleMode}/>
     <Alert alert={alert}/>
     <div className="container my-1">
-          <Routes>
-            <Route path='/' element={
+          {/* <Routes> */}
+            {/* <Route path='/' element={ */}
               <TextForm showAlert={showAlert} heading='Try TextMonkey - Word counter, Character counter, Remove Extra spaces' mode={mode}/>
-            } ></Route>
-            <Route path="/about" element={<About appName='TextMonkey' mode={mode} />}>
-            </Route>
-          </Routes>
+            {/* } ></Route> */}
+            {/* <Route path="/about" element={<About appName='TextMonkey' mode={mode} />}> */}
+            {/* </Route> */}
+          {/* </Routes> */}
     </div>
     <Footer mode={mode}/>
-    </Router>
+    {/* </Router> */}
     </>
   );
 }
