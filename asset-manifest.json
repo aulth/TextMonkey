@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/textmonkey/static/css/main.e6c13ad2.css",
+    "main.js": "/textmonkey/static/js/main.dcf85672.js",
+    "static/js/787.cb9d13cb.chunk.js": "/textmonkey/static/js/787.cb9d13cb.chunk.js",
+    "index.html": "/textmonkey/index.html",
+    "main.e6c13ad2.css.map": "/textmonkey/static/css/main.e6c13ad2.css.map",
+    "main.dcf85672.js.map": "/textmonkey/static/js/main.dcf85672.js.map",
+    "787.cb9d13cb.chunk.js.map": "/textmonkey/static/js/787.cb9d13cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.dcf85672.js"
+  ]
+}
