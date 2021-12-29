@@ -46,7 +46,7 @@ export default function TextForm(props) {
         <div style={{backgroundColor:props.mode==='light'?lightBg:darkBg, color : props.mode ==='light'?darkText:'#EEEEEE'}}>
             <h2>{props.heading}</h2>
             <div className="mb-3">
-            <textarea className="form-control" style={{backgroundColor:props.mode==='light'?'white':'#222831', color:props.mode==='light'?darkText:lightText}} onChange={handleOnChange} onClick={selectText} value={text} id="myText" rows="8"></textarea>
+            <textarea className="form-control" style={{backgroundColor:props.mode==='light'?'white':'#222831', color:props.mode==='light'?darkText:lightText}} onChange={handleOnChange}  value={text} id="myText" rows="8"></textarea>
             <p  className='my-2' >{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words, {text.length} characters, {text.split('\n').length} Paragraphs, {text.split('.').length} Sentences</p>
             <p>{(0.00369 * text.split(' ').length).toFixed(2)} minutes read</p>
             </div>
