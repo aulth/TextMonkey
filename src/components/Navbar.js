@@ -7,8 +7,11 @@ export default function Navbar(props) {
   <div className="container-fluid">
     {/* <Link className="navbar-brand" to="/">{props.title}</Link> */}
     <a className="navbar-brand" href='#'>{props.title}</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
+    <button style={{border:'none',backgroundColor:'transparent'}} className="navbar-toggler p-0"  type="button" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      {/* <span className="navbar-toggler-icon">h</span> */}
+      <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
+        <input type="checkbox" onClick={props.toggleMode} className="form-check-input" id='flexSwitchCheckDefault' />
+      </div>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
